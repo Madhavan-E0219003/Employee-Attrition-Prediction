@@ -26,7 +26,7 @@ def decode(pred):
 @app.route('/')
 def home():
     # Initial rendering
-    result = [{'model':'ExtraTree Classifier', 'prediction':' '}
+    result = [{'model':'Gradient Boosting', 'prediction':' '}
               ]
     
     # Create main dictionary
@@ -72,7 +72,7 @@ def predict():
         predl.append(decode(m.predict(new_array)[0]))
 
     result = [
-            {'model':'ExtraTree Classifier', 'prediction':predl[0]}]
+            {'model':'Gradient Boosting', 'prediction':predl[0]}]
 
     # Create main dictionary
     maind = {}
