@@ -48,11 +48,14 @@ def predict():
     print(values)
     
     # Key names for customer dictionary custd
-    cols = ['Age', 'DailyRate', 'DistanceFromHome', 'Education', 'EnvironmentSatisfaction', 'HourlyRate', 
-                          'JobInvolvement', 'JobLevel','JobSatisfaction', 'MonthlyIncome', 'MonthlyRate', 'NumCompaniesWorked', 
-                          'PercentSalaryHike', 'PerformanceRating', 'RelationshipSatisfaction','StockOptionLevel','TotalWorkingYears', 
-                          'TrainingTimesLastYear','WorkLifeBalance', 'YearsAtCompany', 'YearsInCurrentRole','YearsSinceLastPromotion',
-                          'YearsWithCurrManager']
+    cols = ['DailyRate','EducationField','OverTime','Department','JobRole','MaritalStatus',
+            'BusinessTravel','JobInvolvement','JobSatisfaction','EnvironmentSatisfaction',
+            'RelationshipSatisfaction','PerformanceRating','JobLevel','StockOptionLevel',
+            'Education','WorkLifeBalance','Gender','Age','YearsAtCompany', 'YearsInCurrentRole','YearsSinceLastPromotion',
+                          'YearsWithCurrManager','HourlyRate','MonthlyRate',
+                          'MonthlyIncome','PercentSalaryHike','TotalWorkingYears', 
+                          'TrainingTimesLastYear','NumCompaniesWorked','DistanceFromHome']
+    
 
     # Create customer dictionary
     custd = {}
